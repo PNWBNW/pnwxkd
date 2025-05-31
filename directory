@@ -1,13 +1,28 @@
-xero-knowledge-xrpl/
-├── contracts/
-│   └── XeroVerifier.sol                # Solidity contract for zk credential verification
-├── circuits/
-│   └── credential_verification.circom  # Circom circuit for generating zk proofs
-├── frontend/
-│   ├── package.json                    # Frontend project config (Vite + React)
-│   └── src/
-│       ├── App.jsx                     # Main React app component
-│       └── zkVerifier.js              # Frontend proof logic (stub using snarkjs)
-├── LICENSE.txt                         # MIT License for open-source reuse
-├── COPYRIGHT.txt                       # Trademark declaration for Xero-Knowledge
-└── README.md                           # Overview, setup, and usage instructions
+pnwxkd/
+├── app/                          # Cosmos app wiring
+│   └── app.go
+├── cmd/                          # Node binary entry point
+│   └── pnwxkd/
+│       └── main.go
+├── x/                            # Custom modules
+│   ├── zkcredential/             # Verifies and indexes Aleo zk credentials
+│   │   ├── keeper/
+│   │   ├── types/
+│   │   └── module.go
+│   ├── ansregistry/              # Mirrors .pnw name service from Aleo
+│   ├── payrollaudit/             # Cross-chain audit records from Aleo payroll hashes
+│   ├── dao/                      # SubDAO voting, penalties, and treasury
+│   └── governance/               # Proposal module (optional: override Cosmos gov)
+├── proto/                        # Protobuf type definitions
+│   └── pnwxkd/
+│       ├── zkcredential.proto
+│       ├── ansregistry.proto
+│       └── ...
+├── scripts/                      # Genesis setup, IBC relayer tools
+├── test/                         # Integration and simulation tests
+├── docs/                         # Developer documentation
+├── README.md                     # Overview, architecture, setup
+├── LICENSE.txt                   # Proprietary or hybrid license
+├── COPYRIGHT.txt                 # Trademark for Xero-Knowledge
+├── go.mod                        # Go module config
+└── go.sum                        # Go dependencies lockfile
