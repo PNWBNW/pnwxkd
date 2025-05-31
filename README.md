@@ -94,9 +94,9 @@ See COPYRIGHT.txt for more details.
 
 💬 Questions?
 
-Contact: founder@pnw.foundation
+Contact: provennationalworkers@gmail.com
 Website: coming soon
-Twitter: @PNW_MVP (tentative)
+Twitter: coming soon
 
 
 ---
