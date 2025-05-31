@@ -1,0 +1,17 @@
+Xero-Knowledge XRPL License (Proprietary)
+
+Copyright (c) 2025 Proven National Workers Foundation. All rights reserved.
+
+This software and all associated files and intellectual property ("Software") are the exclusive property of the Proven National Workers Foundation.
+
+Permission is granted to install and use the Software for evaluation or personal educational purposes only. Commercial use, distribution, modification, or reverse engineering of this Software is strictly prohibited unless explicit written permission is obtained.
+
+You may not:
+- Copy, distribute, or sublicense the Software
+- Modify or create derivative works of the Software
+- Use the Software in any competing product or service
+- Use the "Xero-Knowledge" trademark without permission
+
+Unauthorized use of the Software or its components may result in legal action.
+
+To request licensing terms or commercial use rights, contact: provennationalworkers@gmail.com
