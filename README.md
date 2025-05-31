@@ -15,7 +15,7 @@
     - zk credential indexer
     - payroll audit log mirror
     - DAO + SubDAO governance
-    - ANS registry checkpoint
+    - .PNW registry checkpoint
     - Treasury + penalty enforcement
 
 
