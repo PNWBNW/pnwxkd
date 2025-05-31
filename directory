@@ -9,7 +9,7 @@ pnwxkd/
 │   │   ├── keeper/
 │   │   ├── types/
 │   │   └── module.go
-│   ├── ansregistry/              # Mirrors .pnw name service from Aleo
+│   ├── namingregistry/           # Mirrors .pnw identity registry from Aleo
 │   ├── payrollaudit/             # Cross-chain audit records from Aleo payroll hashes
 │   ├── dao/                      # SubDAO voting, penalties, and treasury
 │   └── governance/               # Proposal module (optional: override Cosmos gov)
