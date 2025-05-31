@@ -1,6 +1,6 @@
-# pnwxkd — Proven National Workers Xero-Knowledge Daemon (aka "XERØ")
+# pnwxkd — Proven National Workers Xero-Knowledge Daemon (aka "PNWX")
 
-**pnwxkd**, also known as **"XERØ"**, is a Cosmos SDK–based sovereign sidechain that powers governance, compliance, and zk-audit infrastructure for the Proven National Workers (PNW) ecosystem. It complements the Aleo-based `pnw_mvp` backbone, serving as a modular layer for cross-chain zero-knowledge credential validation, SubDAO oversight, and IBC interoperability.
+**pnwxkd**, also known as **"PNWX"**, is a Cosmos SDK–based sovereign sidechain that powers governance, compliance, and zk-audit infrastructure for the Proven National Workers (PNW) ecosystem. It complements the Aleo-based `pnw_mvp` backbone, serving as a modular layer for cross-chain zero-knowledge credential validation, SubDAO oversight, and IBC interoperability.
 
 ---
 
@@ -13,7 +13,7 @@
                ||
                ||  (zk proof, hash, or IBC relay)
                \/
-   [ Cosmos SDK: pnwxkd ("Xero") ]
+   [ Cosmos SDK: pnwxkd ("PNWX") ]
     - zk credential indexer
     - payroll audit log mirror
     - DAO + SubDAO governance
@@ -43,16 +43,16 @@
 
 ---
 
-## 🪙 Future Utility: The XERØ Token (`XKRO`)
+## 🪙 Future Utility: The PNWX Token (`PNWX`)
 
-The **XERØ token** (ticker: `XKRO`) will be introduced in future phases as a programmable, pegged-value wage token.
+The **PNWX token** (ticker: `PNWX`) will be introduced in future phases as a programmable, pegged-value wage token.
 
 - Designed as a **CBDC-style instrument**, pegged to local fiat currencies (e.g., USD, MXN, BRL)
 - Used as a **cross-border wage token** for Proven National Workers
 - Enables **stable-value payroll payouts** in a privacy-preserving manner
 - May be used for staking, DAO incentives, and remittance disbursement
 
-Governance of the XERØ token will reside within the `pnwxkd` sidechain, with issuance and peg mechanics transparent and regulated by SubDAOs.
+Governance of the PNWX token will reside within the `pnwxkd` sidechain, with issuance and peg mechanics transparent and regulated by SubDAOs.
 
 ---
 
@@ -84,4 +84,4 @@ See `LICENSE.txt` and `COPYRIGHT.txt` for details.
 Built for zk governance.  
 Secured by Aleo.  
 Extended by Cosmos.  
-Powered by XERØ (`XKRO`).
+Powered by PNWX (`PNWX`).
