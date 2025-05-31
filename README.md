@@ -1,33 +1,27 @@
-# Xero
-Xero Knowledge system for xrpl
-
 # Xero-Knowledge XRPL
 
 **Xero-Knowledge** is a modular zero-knowledge toolkit designed to simplify zk-based identity, payroll, and compliance use cases. Built on the XRPL EVM Sidechain, this framework provides developer-friendly zk credential verification using Solidity, Circom, and modern web3 tooling.
 
 ---
 
-## 🌐 What It Does
+## 🌐 Overview
 
-- ✅ Verifies zk credentials with on-chain smart contracts  
-- 🔐 Supports privacy-first proof systems (SnarkJS, Circom)  
-- ⚙️ Bridges traditional data into zk formats (identity, payroll)  
-- 🧩 Interoperable with XRPL mainnet via Axelar bridge  
+This repository provides a scaffold for building zk-enabled apps on XRPL using Solidity, Circom, and modern web3 tooling.
 
 ---
 
-## 🛠️ Requirements
+## 🔧 Setup Instructions
+
+### Requirements
 
 - Node.js (v18+)
 - Circom + SnarkJS
-- Hardhat (for contract deployment)
-- MetaMask (for XRPL EVM Sidechain)
+- Hardhat
+- MetaMask
 
 ---
 
-## ⚙️ Setup Instructions
-
-### 1. Install and Compile Circom Circuit
+### 1. Compile Circuit
 
 ```bash
 cd circuits
@@ -42,7 +36,7 @@ snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
 
 ---
 
-2. Deploy Smart Contract to XRPL EVM Sidechain
+2. Deploy Smart Contract
 
 cd contracts
 npx hardhat compile
@@ -51,58 +45,53 @@ npx hardhat run scripts/deploy.js --network xrplEVM
 
 ---
 
-3. Launch Frontend
+3. Run Frontend
 
 cd frontend
 npm install
-npm run start
+npm start
 
 Visit http://localhost:5173 in your browser.
 
 
 ---
 
-🧠 Use Cases
+✨ Features
 
-zkPayroll: proof of hours worked without exposing identity
+Plug-and-play zk credential verification
 
-zkKYC: validate age, citizenship, residency via circuit
+Interoperable with XRPL EVM sidechain
 
-zkCompliance: cryptographic attestations without leaks
+Easily extendable to payroll, voting, or compliance use cases
 
-
-
----
-
-🔒 License
-
-This project is licensed under the MIT License.
 
 
 ---
 
-© Trademark Notice
+📄 LICENSE
 
-XERO-KNOWLEDGE™ is a protected title under common law trademark.
-
-All rights to the name "Xero-Knowledge" in relation to zero-knowledge systems are claimed by the Proven National Workers Foundation, 2025.
-
-See COPYRIGHT.txt for more details.
+This project is proprietary software and may not be copied, modified, distributed, or used without explicit written permission from the Proven National Workers Foundation. See LICENSE.txt.
 
 
 ---
 
-💬 Questions?
+© COPYRIGHT
 
-Contact: provennationalworkers@gmail.com
-Website: coming soon
-Twitter: coming soon
+See COPYRIGHT.txt for trademark and naming protections.
+
+
+---
+
+💬 Contact
+
+To request a commercial license or partnership: Email: provennationalworkers@gmail.com
+X: coming soon
+Site: coming soon
 
 
 ---
 
 Built for transparency. Powered by zero-knowledge.
-
 
 
 
