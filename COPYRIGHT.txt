@@ -1,7 +1,56 @@
-XERO-KNOWLEDGE™ is a protected brand name under common law trademark.
+Copyright © 2025 Proven National Workers Foundation All rights reserved.
 
-All rights to the name "Xero-Knowledge" in relation to zero-knowledge proof systems,
-privacy-focused cryptographic tools, and related blockchain applications are claimed
-by the Proven National Workers Foundation, 2025.
+This software and associated files are proprietary to the Proven National Workers Foundation.
 
-Unauthorized use in a competing product may constitute trademark infringement.
+
+---
+
+Trademark Notice
+
+Xero-Knowledge™ is a registered term of the PNW Foundation.
+
+PNWX, PNWXchange, and pnwxkd are proprietary ecosystem components.
+
+Unauthorized use of these terms or ecosystem branding is prohibited without prior written consent.
+
+
+
+---
+
+License Terms
+
+Permission is granted to use this software solely for the purposes of evaluating, developing, or extending the Proven National Workers ecosystem.
+
+You may:
+
+Fork and contribute code to official PNW repositories
+
+Deploy testnet instances for pilot or research purposes
+
+Build modules that interoperate with pnwxkd under compatible licenses with approval from the PNW Foundation
+
+
+You may NOT:
+
+Use the term “Xero-Knowledge” or “PNWX” for unrelated commercial products
+
+Sell or redistribute modified versions under the same names
+
+Represent yourself as an official delegate or branch of PNWF without approval
+
+
+
+---
+
+Exceptions
+
+Requests for partnerships, commercial integrations, or cross-chain token adoption should be directed to:
+📩 provennationalworkers@gmail.com
+
+Use of the PNWX token in third-party marketplaces or payroll tools must comply with the zk audit standards defined in pnw_mvp and verified within pnwxkd.
+
+
+---
+
+Built for privacy. Designed for equity. Governed by workers.
+
