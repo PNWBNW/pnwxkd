@@ -1,0 +1,13 @@
+xero-knowledge-xrpl/
+├── contracts/
+│   └── XeroVerifier.sol                # Solidity contract for zk credential verification
+├── circuits/
+│   └── credential_verification.circom  # Circom circuit for generating zk proofs
+├── frontend/
+│   ├── package.json                    # Frontend project config (Vite + React)
+│   └── src/
+│       ├── App.jsx                     # Main React app component
+│       └── zkVerifier.js              # Frontend proof logic (stub using snarkjs)
+├── LICENSE.txt                         # MIT License for open-source reuse
+├── COPYRIGHT.txt                       # Trademark declaration for Xero-Knowledge
+└── README.md                           # Overview, setup, and usage instructions
