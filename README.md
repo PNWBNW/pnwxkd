@@ -18,30 +18,6 @@
     - ANS registry checkpoint
     - Treasury + penalty enforcement
 
-## 📁 Directory Structure
-
-pnwxkd/
-├── app/                          # Cosmos app wiring
-│   └── app.go
-├── cmd/                          # CLI entrypoint
-│   └── pnwxkd/
-│       └── main.go
-├── x/                            # Custom Cosmos modules
-│   ├── zkcredential/             # ZK credential verifier + Aleo sync
-│   ├── namingregistry/              # Mirrors .pnw Aleo name service
-│   ├── payrollaudit/             # Indexes payroll hashes from Aleo
-│   ├── dao/                      # SubDAO and oversight logic
-│   └── governance/               # Proposal engine (optional)
-├── proto/                        # Protobuf definitions
-│   └── pnwxkd/
-├── scripts/                      # IBC tools, relayers, genesis setup
-├── test/                         # Integration test environment
-├── docs/                         # Developer and IBC guides
-├── LICENSE.txt                   # Proprietary or hybrid license
-├── COPYRIGHT.txt                 # Trademark protection
-├── README.md                     # This file
-├── go.mod                        # Go module setup
-└── go.sum                        # Go module lock
 
 ## 🔧 Key Modules
 
