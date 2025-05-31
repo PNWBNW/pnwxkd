@@ -12,11 +12,18 @@ pnwxkd/
 │   ├── namingregistry/           # Mirrors .pnw identity registry from Aleo
 │   ├── payrollaudit/             # Cross-chain audit records from Aleo payroll hashes
 │   ├── dao/                      # SubDAO voting, penalties, and treasury
+│   ├── pnwxchange/               # zk-enabled exchange for goods & services
+│   │   ├── keeper/               # Core exchange logic (listings, offers, escrow)
+│   │   ├── types/                # Msg types, structs, events
+│   │   ├── module.go             # AppModule definition
+│   │   └── params.go             # Configurable parameters (fees, durations, etc.)
 │   └── governance/               # Proposal module (optional: override Cosmos gov)
 ├── proto/                        # Protobuf type definitions
 │   └── pnwxkd/
 │       ├── zkcredential.proto
-│       ├── ansregistry.proto
+│       ├── namingregistry.proto
+│       ├── payrollaudit.proto
+│       ├── pnwxchange.proto      # Listings, orders, reviews, events
 │       └── ...
 ├── scripts/                      # Genesis setup, IBC relayer tools
 ├── test/                         # Integration and simulation tests
