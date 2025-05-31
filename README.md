@@ -1,97 +1,88 @@
-# Xero-Knowledge XRPL
+# pnwxkd — Proven National Workers Xero-Knowledge Daemon
 
-**Xero-Knowledge** is a modular zero-knowledge toolkit designed to simplify zk-based identity, payroll, and compliance use cases. Built on the XRPL EVM Sidechain, this framework provides developer-friendly zk credential verification using Solidity, Circom, and modern web3 tooling.
+**pnwxkd** is a Cosmos SDK–based sovereign sidechain that powers the governance, compliance, and zk-audit infrastructure for the Proven National Workers (PNW) ecosystem. It complements the Aleo-based `pnw_mvp` backbone, serving as a modular layer for cross-chain zero-knowledge credential validation, SubDAO oversight, and IBC interoperability.
 
----
+## 🌐 Architecture Overview
 
-## 🌐 Overview
+       [ Aleo: pnw_mvp ]
+        - zk payroll proofs
+        - credential NFTs
+        - .pnw identity registry
+               ||
+               ||  (zk proof, hash, or IBC relay)
+               \/
+   [ Cosmos SDK: pnwxkd ]
+    - zk credential indexer
+    - payroll audit log mirror
+    - DAO + SubDAO governance
+    - ANS registry checkpoint
+    - Treasury + penalty enforcement
 
-This repository provides a scaffold for building zk-enabled apps on XRPL using Solidity, Circom, and modern web3 tooling.
+## 📁 Directory Structure
 
----
+pnwxkd/
+├── app/                          # Cosmos app wiring
+│   └── app.go
+├── cmd/                          # CLI entrypoint
+│   └── pnwxkd/
+│       └── main.go
+├── x/                            # Custom Cosmos modules
+│   ├── zkcredential/             # ZK credential verifier + Aleo sync
+│   ├── namingregistry/              # Mirrors .pnw Aleo name service
+│   ├── payrollaudit/             # Indexes payroll hashes from Aleo
+│   ├── dao/                      # SubDAO and oversight logic
+│   └── governance/               # Proposal engine (optional)
+├── proto/                        # Protobuf definitions
+│   └── pnwxkd/
+├── scripts/                      # IBC tools, relayers, genesis setup
+├── test/                         # Integration test environment
+├── docs/                         # Developer and IBC guides
+├── LICENSE.txt                   # Proprietary or hybrid license
+├── COPYRIGHT.txt                 # Trademark protection
+├── README.md                     # This file
+├── go.mod                        # Go module setup
+└── go.sum                        # Go module lock
 
-## 🔧 Setup Instructions
+## 🔧 Key Modules
 
-### Requirements
+### ✅ zkcredential
+- Validates and stores zk credential hashes from Aleo
+- Supports public hash indexing and revocation mapping
+- Allows third-party verification via REST/gRPC
 
-- Node.js (v18+)
-- Circom + SnarkJS
-- Hardhat
-- MetaMask
+### ✅ namingregistry
+- Mirrors .pnw identity mappings from Aleo
+- Enables IBC-readable lookup of human-readable identities
 
----
+### ✅ paytrrollaudit
+- Cross-chain logging of payroll hashes, timestamps, and states
+- Designed for audit compliance and SubDAO traceability
 
-### 1. Compile Circuit
+### ✅ dao
+- SubDAO proposal voting and penalty system
+- Funds allocation and reward enforcement logic
 
-```bash
-cd circuits
-circom credential_verification.circom --r1cs --wasm --sym
-snarkjs groth16 setup credential_verification.r1cs pot12_final.ptau circuit_final.zkey
-snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
+## 🧠 Design Principles
 
-> You can generate a dummy .zkey if you just want to test frontend flows.
+- ✅ Sovereign: Built using Cosmos SDK for full control  
+- 🔐 Privacy-Aware: Accepts and validates zk artifacts from Aleo  
+- 🔗 Interoperable: Designed to bridge across XRPL, Ethereum, Solana, and more  
+- 📊 Transparent: On-chain audit support for zero-knowledge proofs  
 
+## 📄 Licensing
 
+This software is proprietary and owned by the Proven National Workers Foundation.  
+Use of the name `Xero-Knowledge™` and any component of this software requires prior written approval.  
+See `LICENSE.txt` and `COPYRIGHT.txt` for details.
 
+## ✉️ Contact
 
----
-
-2. Deploy Smart Contract
-
-cd contracts
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network xrplEVM
-
-
----
-
-3. Run Frontend
-
-cd frontend
-npm install
-npm start
-
-Visit http://localhost:5173 in your browser.
-
-
----
-
-✨ Features
-
-Plug-and-play zk credential verification
-
-Interoperable with XRPL EVM sidechain
-
-Easily extendable to payroll, voting, or compliance use cases
-
-
-
----
-
-📄 LICENSE
-
-This project is proprietary software and may not be copied, modified, distributed, or used without explicit written permission from the Proven National Workers Foundation. See LICENSE.txt.
-
-
----
-
-© COPYRIGHT
-
-See COPYRIGHT.txt for trademark and naming protections.
-
-
----
-
-💬 Contact
-
-To request a commercial license or partnership: Email: provennationalworkers@gmail.com
-X: coming soon
-Site: coming soon
-
+- Email: `provennationalworkers@gmail.com`  
+- Aleo Project: [`pnw_mvp`](https://github.com/PNWBNW/pnw_mvp)  
+- Cosmos Chain ID: `pnwxkd-1` (testnet coming soon)
 
 ---
 
-Built for transparency. Powered by zero-knowledge.
-
-
-
+Built for zk governance.  
+Secured by Aleo.  
+Extended by Cosmos.
